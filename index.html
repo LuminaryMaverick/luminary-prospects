@@ -85,7 +85,6 @@
 										<div class="field">
 											<label for="message">Address</label>
 											<textarea name="message" id="message" rows="4"></textarea>
-											<button type="submit"></button>
 										</div>
 									</div>
 									<ul class="actions">
@@ -99,7 +98,7 @@
 								function sendEmail(){
 									Email.send({
 									SecureToken: "c1673840-a92d-462b-a3a4-58de198a1d34",
-									To : 'info@luminaryprospects.com',
+									To : "info@luminaryprospects.com",
 									From : document.getElementById("email").value,
 									Subject : "New Prospect Inquiry",
 									Body : "fname : " + document.getElementById("first name").value
